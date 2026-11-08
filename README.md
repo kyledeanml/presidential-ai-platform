@@ -6,12 +6,12 @@ Every citizen across the country can hold direct, multi-turn conversations with 
 
 ---
 
-## ✨ Key Capabilities
+## Key Capabilities
 
 1. **Interactive Civic Town Hall Web UI (`ui/`)**:
-   - **💬 Citizen Town Hall:** Multi-turn conversational interface with state-by-state localization, suggested prompt chips, Markdown message rendering, PII redaction badges, and a **Live Grounding & Telemetry Inspector** sidebar.
-   - **📜 Official Policy Platform Explorer:** Searchable policy cards displaying summaries, operational pillars, and strict candidate veto redlines, with one-click deep dives into chat.
-   - **📊 National Pulse & Outlier Synthesis Dashboard:** Real-time KPI metrics, category volume bars, emotional climate breakdowns, an Advisory Council Outlier Queue, and one-click Markdown Executive Briefing generation & download.
+   - **Citizen Town Hall:** Multi-turn conversational interface with state-by-state localization, suggested prompt chips, Markdown message rendering, PII redaction badges, and a **Live Grounding & Telemetry Inspector** sidebar.
+   - **Official Policy Platform Explorer:** Searchable policy cards displaying summaries, operational pillars, and strict candidate veto redlines, with one-click deep dives into chat.
+   - **National Pulse & Outlier Synthesis Dashboard:** Real-time KPI metrics, category volume bars, emotional climate breakdowns, an Advisory Council Outlier Queue, and one-click Markdown Executive Briefing generation & download.
 
 2. **Stateful Multi-Turn Conversational Engine (`core/conversation_engine.py`, `core/llm_client.py`)**:
    - Handles natural greetings, platform overviews, identity/architecture inquiries, grounded policy questions, and contextual follow-ups (*"What are your redlines?"*, *"Tell me more about how that works"*).
@@ -29,7 +29,7 @@ Every citizen across the country can hold direct, multi-turn conversations with 
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```text
 presidential-ai-platform/
@@ -63,7 +63,7 @@ presidential-ai-platform/
 
 ---
 
-## 🚀 Quickstart
+## Quickstart
 
 Requires **Python 3.10+** (zero third-party packages required to launch the Web UI and built-in conversational engine).
 
