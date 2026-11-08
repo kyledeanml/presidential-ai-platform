@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/banner.jpg" alt="48th Presidential AI Platform — GGUF Policy Persona, Citizen Town Hall & National Pulse Synthesis" width="100%" />
+</p>
+
 # 🏛️ 48th Presidential AI Persona & Civic Pulse Platform
 
 An open, zero-hallucination civic artificial intelligence platform designed for the **Candidate for the 48th President of the United States**.
@@ -33,6 +37,8 @@ Every citizen across the country can hold direct, multi-turn conversations with 
 
 ```text
 presidential-ai-platform/
+├── assets/
+│   └── banner.jpg                       # Repository hero banner
 ├── api/
 │   └── server.py                        # Zero-dependency multi-threaded Web UI & REST API server
 ├── ui/
