@@ -1,0 +1,13 @@
+# Presidential AI Civic Platform Dependencies
+
+# Optional Web API Framework (the built-in api/server.py runs with zero dependencies)
+fastapi>=0.110.0
+uvicorn>=0.28.0
+pydantic>=2.6.0
+
+# Inference Engine (Optional: if running llama-cpp-python directly in-process)
+# llama-cpp-python>=0.2.80
+
+# Advanced Vector Search & Embeddings (Optional: for billion-scale vector indexes)
+# chromadb>=0.4.24
+# sentence-transformers>=2.5.0

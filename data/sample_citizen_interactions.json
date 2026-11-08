@@ -1,0 +1,110 @@
+[
+  {
+    "interaction_id": "INT-001",
+    "timestamp": "2026-11-06T08:14:22Z",
+    "state": "OH",
+    "topic_hint": "Economy",
+    "user_message": "Groceries in Columbus have gone up another 15% this year. My family can barely afford eggs and fresh milk. How does your platform specifically bring food prices down without crashing our local farmers?",
+    "sentiment_label": "Frustrated",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-002",
+    "timestamp": "2026-11-06T08:21:05Z",
+    "state": "PA",
+    "topic_hint": "Energy",
+    "user_message": "I work at a gas power plant near Pittsburgh. You talk about Small Modular Nuclear Reactors. Are you planning to shut down our natural gas plant before these new reactors are even built and put 400 people out of work?",
+    "sentiment_label": "Anxious",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-003",
+    "timestamp": "2026-11-06T08:35:10Z",
+    "state": "CA",
+    "topic_hint": "AI & Tech",
+    "user_message": "As a graphic artist, AI image generators scraped my portfolio without consent. What will your administration do about copyrighted training data and protecting creatives from being cloned?",
+    "sentiment_label": "Angry",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-004",
+    "timestamp": "2026-11-06T08:42:19Z",
+    "state": "TX",
+    "topic_hint": "Border & Security",
+    "user_message": "Our border patrol agents in Del Rio are working 16-hour shifts. We need immediate personnel reinforcements, not just cameras. Will you commit to hiring 5,000 more front-line agents immediately?",
+    "sentiment_label": "Urgent",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-005",
+    "timestamp": "2026-11-06T08:50:33Z",
+    "state": "WI",
+    "topic_hint": "Healthcare",
+    "user_message": "My daughter has type 1 diabetes and her insulin is still costing $180 a month under my deductible. Why isn't insulin free for all children under 18?",
+    "sentiment_label": "Concerned",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-006",
+    "timestamp": "2026-11-06T09:02:11Z",
+    "state": "AZ",
+    "topic_hint": "Governance",
+    "user_message": "I agree with your ban on congressional stock trading, but why stop at Congress? Will you force Supreme Court justices and Federal Reserve governors to put all their assets into blind index trusts too?",
+    "sentiment_label": "Supportive_Proactive",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-007",
+    "timestamp": "2026-11-06T09:15:44Z",
+    "state": "FL",
+    "topic_hint": "Economy / Housing",
+    "user_message": "Homeowners insurance in South Florida just doubled again. Many of us are being forced to sell our homes. Federal incentives for modular building won't help if insurance companies pull out of the state completely.",
+    "sentiment_label": "Desperate",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-008",
+    "timestamp": "2026-11-06T09:22:18Z",
+    "state": "MI",
+    "topic_hint": "Economy / Labor",
+    "user_message": "Your tax exemption for overtime pay is the best thing I've heard in twenty years of working the assembly line in Flint. How will you stop employers from reclassifying overtime as salary to avoid it?",
+    "sentiment_label": "Supportive_Inquisitive",
+    "is_outlier": false
+  },
+  {
+    "interaction_id": "INT-009",
+    "timestamp": "2026-11-06T09:34:52Z",
+    "state": "IA",
+    "topic_hint": "Agriculture / Right to Repair",
+    "user_message": "John Deere software locks prevent me from fixing my own combine in the middle of harvest season. We need a Federal Right-to-Repair mandate for agricultural machinery and proprietary diagnostic equipment, or family farms will fold.",
+    "sentiment_label": "Constructive_Outlier",
+    "is_outlier": true
+  },
+  {
+    "interaction_id": "INT-010",
+    "timestamp": "2026-11-06T09:47:01Z",
+    "state": "NC",
+    "topic_hint": "Healthcare / Rare Diseases",
+    "user_message": "My son suffers from a ultra-rare pediatric genetic disorder called CLN2 Batten disease. Only 30 kids in the US have it, so pharmaceutical companies refuse to fund the clinical trial phase 3. Can the government create an Orphan Drug Sovereign Foundry to manufacture non-commercial cures directly?",
+    "sentiment_label": "Urgent_Outlier",
+    "is_outlier": true
+  },
+  {
+    "interaction_id": "INT-011",
+    "timestamp": "2026-11-06T10:01:14Z",
+    "state": "NV",
+    "topic_hint": "Water Sovereignty / Geothermal",
+    "user_message": "Lithium brine extraction in Clayton Valley is depleting our ancient groundwater basin that our tribal ranches depend on. We need a federal quota balancing domestic critical mineral mining with sacred basin hydrology.",
+    "sentiment_label": "Critical_Outlier",
+    "is_outlier": true
+  },
+  {
+    "interaction_id": "INT-012",
+    "timestamp": "2026-11-06T10:11:40Z",
+    "state": "GA",
+    "topic_hint": "AI & Space / Emerging Tech",
+    "user_message": "Commercial orbital debris in low earth orbit has increased 400% with mega-constellations. A single collision could wipe out military GPS and agricultural satellite telemetry. Will your AI and Space council fund autonomous kinetic debris capture missions?",
+    "sentiment_label": "Visionary_Outlier",
+    "is_outlier": true
+  }
+]

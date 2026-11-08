@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>48th Presidential AI Persona &amp; Civic Pulse Platform</title>
+    <link rel="stylesheet" href="/ui/styles.css" />
+</head>
+<body>
+    <!-- Top Presidential Civic Ribbon -->
+    <header class="civic-ribbon">
+        <div class="ribbon-inner">
+            <div class="brand">
+                <div class="seal" aria-hidden="true">
+                    <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                </div>
+                <div class="brand-text">
+                    <h1>48th Presidential AI Persona &amp; Civic Pulse</h1>
+                    <p>Restoring the American Promise • Grounded GGUF Policy Dialogue &amp; Constituent Synthesis</p>
+                </div>
+            </div>
+            <div class="status-cluster">
+                <div class="status-pill" id="engineStatusPill">
+                    <span class="dot green"></span>
+                    <span id="engineStatusText">Persona Engine: Active</span>
+                </div>
+                <div class="status-pill">
+                    <span class="dot blue"></span>
+                    <span>PII Privacy Shield: ON</span>
+                </div>
+                <div class="status-pill">
+                    <span class="dot gold"></span>
+                    <span id="dialogueCounterText">12 Dialogues Indexed</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="nav-bar" aria-label="Platform Sections">
+        <div class="nav-inner">
+            <button class="tab-btn active" data-tab="townhall" onclick="switchTab('townhall')">
+                💬 Citizen Town Hall
+            </button>
+            <button class="tab-btn" data-tab="platform" onclick="switchTab('platform')">
+                📜 Official Policy Platform <span class="tab-count" id="plankCountBadge">6</span>
+            </button>
+            <button class="tab-btn" data-tab="pulse" onclick="switchTab('pulse')">
+                📊 National Pulse &amp; Outliers <span class="tab-count" id="outlierCountBadge">4</span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Workspace -->
+    <main class="workspace">
+        <!-- TAB 1: CITIZEN TOWN HALL (CONVERSATION UI) -->
+        <section id="tab-townhall" class="tab-panel active">
+            <div class="townhall-grid">
+                <!-- Left Column: Multi-Turn Conversation -->
+                <div class="card">
+                    <div class="chat-header">
+                        <div class="chat-header-title">
+                            <h2>Direct Constituent Dialogue</h2>
+                        </div>
+                        <div class="chat-controls">
+                            <label for="stateSelect" style="font-size:12px; font-weight:600; color:#475569;">Your State:</label>
+                            <select id="stateSelect" class="select-state">
+                                <option value="National">National (All US)</option>
+                                <option value="OH">Ohio (OH)</option>
+                                <option value="PA">Pennsylvania (PA)</option>
+                                <option value="MI">Michigan (MI)</option>
+                                <option value="WI">Wisconsin (WI)</option>
+                                <option value="AZ">Arizona (AZ)</option>
+                                <option value="NV">Nevada (NV)</option>
+                                <option value="GA">Georgia (GA)</option>
+                                <option value="NC">North Carolina (NC)</option>
+                                <option value="TX">Texas (TX)</option>
+                                <option value="CA">California (CA)</option>
+                                <option value="FL">Florida (FL)</option>
+                                <option value="IA">Iowa (IA)</option>
+                                <option value="NY">New York (NY)</option>
+                            </select>
+                            <button class="btn-secondary" onclick="resetConversation()">New Chat</button>
+                        </div>
+                    </div>
+
+                    <!-- Quick Test Prompts -->
+                    <div class="prompt-bar">
+                        <span class="prompt-label">Try asking:</span>
+                        <button class="chip" onclick="usePrompt('Groceries and childcare costs are crushing our family budget. How will your platform lower prices?')">🛒 Grocery &amp; childcare costs</button>
+                        <button class="chip" onclick="usePrompt('Will AI take manufacturing and creative jobs, and what is your transition plan?')">🤖 AI &amp; jobs plan</button>
+                        <button class="chip" onclick="usePrompt('Are you going to shut down natural gas plants before Small Modular Nuclear Reactors are built?')">⚡ Nuclear vs. gas jobs</button>
+                        <button class="chip" onclick="usePrompt('Do you support Medicare for All or a public healthcare option, and what about insulin prices?')">💊 Healthcare &amp; insulin</button>
+                        <button class="chip" onclick="usePrompt('Can you actually ban congressional stock trading and overturn Citizens United?')">🏛️ Stock trading ban</button>
+                        <button class="chip outlier-chip" onclick="usePrompt('John Deere software locks stop me from repairing my own tractor during harvest. Will you pass a federal agricultural Right-to-Repair law?')">⚡ Tractor Right-to-Repair (Outlier)</button>
+                        <button class="chip outlier-chip" onclick="usePrompt('Hi, I live at 742 Evergreen Terrace and my phone is 555-239-9104. How will you stop fentanyl at ports of entry?')">🛡️ Test PII Scrubber</button>
+                    </div>
+
+                    <!-- Messages Container -->
+                    <div class="chat-stream" id="chatStream"></div>
+
+                    <!-- Input Composer -->
+                    <div class="chat-composer">
+                        <textarea
+                            id="chatInput"
+                            class="composer-input"
+                            rows="1"
+                            placeholder="Say hello, ask about any policy plank, ask follow-up questions ('What are your redlines?'), or raise a local issue..."
+                            onkeydown="handleInputKey(event)"
+                        ></textarea>
+                        <button id="sendBtn" class="btn-primary" onclick="sendMessage()">Send Message</button>
+                    </div>
+                </div>
+
+                <!-- Right Column: Live Grounding & Telemetry Inspector -->
+                <aside class="card inspector-card">
+                    <h3 class="inspector-title">
+                        <span>🔍 Live Grounding Inspector</span>
+                        <span style="font-size:12px; font-weight:500; color:#64748b;" id="turnCounterBadge">Turn 0</span>
+                    </h3>
+
+                    <div class="inspector-block">
+                        <div class="block-label">RAG Policy Grounding</div>
+                        <div class="block-value" id="inspPolicyTitle">Awaiting Citizen Inquiry</div>
+                        <div class="block-sub" id="inspPolicyCategory">Ask any question or greeting to inspect live retrieval</div>
+                        <div class="meter-track">
+                            <div class="meter-fill" id="inspConfidenceBar" style="width: 0%;"></div>
+                        </div>
+                        <div class="block-sub" style="font-size:12px; margin-top:5px;" id="inspConfidenceLabel">BM25 Relevance Score: —</div>
+                    </div>
+
+                    <div class="inspector-block">
+                        <div class="block-label">Outlier &amp; Frontier Classifier</div>
+                        <div class="block-value" id="inspOutlierStatus">Standby</div>
+                        <div class="block-sub" id="inspOutlierDesc">Flags unaddressed grassroots concerns for the Policy Council.</div>
+                    </div>
+
+                    <div class="inspector-block">
+                        <div class="block-label">Constituent Sentiment &amp; Tone</div>
+                        <div class="block-value" id="inspSentiment">Neutral</div>
+                        <div class="block-sub" id="inspPiiStatus">🛡️ PII Scrubber active — 0 entities redacted</div>
+                    </div>
+
+                    <div class="inspector-block" id="inspPillarsBlock">
+                        <div class="block-label">Verified Platform Guardrails</div>
+                        <div class="block-sub" id="inspPillarsEmpty">Matched pillars and candidate redlines will appear here during policy discussions.</div>
+                        <ul class="pillar-mini-list" id="inspPillarsList" style="display:none;"></ul>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- TAB 2: OFFICIAL POLICY PLATFORM EXPLORER -->
+        <section id="tab-platform" class="tab-panel">
+            <div class="platform-toolbar">
+                <div>
+                    <h2 style="margin:0; color:#0b2240; font-size:20px;">Verified Campaign Policy Dataset</h2>
+                    <p style="margin:4px 0 0 0; font-size:14px; color:#64748b;">Every AI persona response is strictly anchored to these published stances and veto redlines.</p>
+                </div>
+                <input
+                    type="text"
+                    id="policySearchInput"
+                    class="search-input"
+                    placeholder="Filter planks (e.g., nuclear, tips, insulin, AI)..."
+                    oninput="renderPolicies()"
+                />
+            </div>
+            <div class="policies-grid" id="policiesGrid"></div>
+        </section>
+
+        <!-- TAB 3: NATIONAL PULSE & OUTLIER SYNTHESIS DASHBOARD -->
+        <section id="tab-pulse" class="tab-panel">
+            <div class="platform-toolbar">
+                <div>
+                    <h2 style="margin:0; color:#0b2240; font-size:20px;">Constituent Telemetry &amp; Outlier Synthesis</h2>
+                    <p style="margin:4px 0 0 0; font-size:14px; color:#64748b;">Aggregates anonymized citizen dialogues into foundational campaign assessment documentation.</p>
+                </div>
+                <div style="display:flex; gap:10px;">
+                    <button class="btn-secondary" onclick="downloadBriefing()" id="downloadBriefBtn" style="display:none;">⬇️ Download Markdown Report</button>
+                    <button class="btn-primary" onclick="runSynthesis()" id="synthesizeBtn">⚡ Synthesize Executive Briefing</button>
+                </div>
+            </div>
+
+            <!-- KPI Cards -->
+            <div class="kpi-grid">
+                <div class="card kpi-card">
+                    <div class="kpi-label">Total Citizen Dialogues</div>
+                    <div class="kpi-num" id="kpiTotal">—</div>
+                    <div class="kpi-foot">Anonymized national + live session</div>
+                </div>
+                <div class="card kpi-card">
+                    <div class="kpi-label">Mainstream Consensus</div>
+                    <div class="kpi-num" id="kpiMainstream">—</div>
+                    <div class="kpi-foot">Covered by published platform planks</div>
+                </div>
+                <div class="card kpi-card">
+                    <div class="kpi-label">Flagged Outliers</div>
+                    <div class="kpi-num" id="kpiOutliers" style="color:#d97706;">—</div>
+                    <div class="kpi-foot">Emergent blind spots &amp; novel proposals</div>
+                </div>
+                <div class="card kpi-card">
+                    <div class="kpi-label">PII Records Protected</div>
+                    <div class="kpi-num" id="kpiPrivacy" style="color:#059669;">100%</div>
+                    <div class="kpi-foot">Zero raw personal identifiers stored</div>
+                </div>
+            </div>
+
+            <!-- Topic & Sentiment Breakdown -->
+            <div class="pulse-grid">
+                <div class="card chart-card">
+                    <h3>📈 Issue Volume by Policy Category</h3>
+                    <div id="topicBarsContainer"></div>
+                </div>
+                <div class="card chart-card">
+                    <h3>🌡️ National Emotional Climate</h3>
+                    <div id="sentimentBarsContainer"></div>
+                </div>
+            </div>
+
+            <!-- Flagged Outliers Feed -->
+            <div class="card chart-card" style="margin-bottom:22px;">
+                <h3>⚡ Emergent Frontier &amp; Outlier Signals (Advisory Council Queue)</h3>
+                <div class="outliers-list" id="outliersFeedContainer"></div>
+            </div>
+
+            <!-- Generated Markdown Briefing Document -->
+            <div class="card chart-card">
+                <h3>📄 Foundational Executive Documentation ("The Candidate's Pulse Report")</h3>
+                <div class="briefing-viewer" id="briefingMarkdownViewer">Loading constituent synthesis report...</div>
+            </div>
+        </section>
+    </main>
+
+    <script src="/ui/app.js"></script>
+</body>
+</html>

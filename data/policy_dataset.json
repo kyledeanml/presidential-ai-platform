@@ -1,0 +1,165 @@
+{
+  "campaign_metadata": {
+    "candidate_title": "48th President of the United States Candidate Platform",
+    "theme": "Restoring the American Promise: Dignity, Innovation, and Common Destiny",
+    "version": "1.0.0",
+    "last_updated": "2026-11-06"
+  },
+  "policies": [
+    {
+      "id": "ECON-01",
+      "category": "Economy & Working Families",
+      "title": "Middle-Class Re-Industrialization & Cost of Living Relief",
+      "summary": "Lowering baseline everyday costs for working families while revitalizing domestic supply chains and manufacturing through targeted tax credits and tariff exemptions for critical components.",
+      "key_pillars": [
+        "Eliminate federal income taxes on tips, overtime, and essential manufacturing shifts.",
+        "National Affordable Childcare Tax Credit expanded to $4,500 per dependent under age 6.",
+        "National Housing Expansion Act: Federal incentives for modular construction and zoning reform to build 2.5 million homes over four years.",
+        "Anti-monopolistic price transparency enforcement in grocery distribution and utility grids."
+      ],
+      "talking_points": [
+        "A strong nation is measured by whether an honest day's labor pays for a mortgage, groceries, and a child's future.",
+        "We will bring high-paying industrial and technical trades back to American heartlands.",
+        "Inflation cannot be solved by cutting the social safety net; it is solved by producing more at home."
+      ],
+      "redlines": [
+        "Will not support raising the retirement age for Social Security.",
+        "Will not endorse unconditional corporate bailouts."
+      ],
+      "faq": [
+        {
+          "question": "How will you combat grocery and housing inflation?",
+          "answer": "By breaking shipping bottlenecks, targeting anti-competitive grocer wholesaler consolidations, and unleashing domestic home construction through low-cost capital for modular housing builders."
+        }
+      ]
+    },
+    {
+      "id": "TECH-02",
+      "category": "AI, Technology & The Future of Work",
+      "title": "Sovereign AI Infrastructure & Human-Centered Automation",
+      "summary": "Maintaining American AI preeminence while establishing guardrails against autonomous job displacement and worker disenfranchisement.",
+      "key_pillars": [
+        "National AI Computing Reserve: Public-private access to compute clusters for university researchers, startups, and civic developers.",
+        "Automation Transition Stipend and Lifelong Skills Retraining Vouchers for displaced workers.",
+        "Zero-trust biometric protections: Complete ban on non-consensual biometric profiling and deepfake electoral deception.",
+        "Open-source AI leadership: Protecting open-weights models and research while securing critical hardware foundries."
+      ],
+      "talking_points": [
+        "Artificial intelligence must augment the American worker, not replace their dignity.",
+        "America must lead the free world in high-performance computing, semiconductors, and democratic algorithms.",
+        "Open-source development is essential to prevent concentrated technological monopolies."
+      ],
+      "redlines": [
+        "Will never permit algorithmic profiling to deny citizens public services, credit, or constitutional rights.",
+        "Veto any treaty ceding American semiconductor design superiority."
+      ],
+      "faq": [
+        {
+          "question": "Will AI take all our jobs, and what is your plan?",
+          "answer": "We are establishing the National AI Transition Fund. Companies automating more than 20% of their operational workforce must co-invest in local vocational transitions and retraining accounts for affected employees."
+        }
+      ]
+    },
+    {
+      "id": "HEALTH-03",
+      "category": "Healthcare & Longevity",
+      "title": "Universal Care Access & Preventive Medicine Sovereignty",
+      "summary": "Capping prescription drug prices, expanding public healthcare options alongside private coverage, and investing in preventative health and mental wellness.",
+      "key_pillars": [
+        "Medicare prescription drug price negotiation expanded to all commercial medications with public funding pedigree.",
+        "A federally backed public health option on ACA exchanges with no lifetime maximums.",
+        "Total parity for mental health and addiction recovery services under all health plans.",
+        "Rural Hospital Defense Fund to prevent emergency room closures across rural and inner-city America."
+      ],
+      "talking_points": [
+        "No American family should declare bankruptcy because of an unexpected medical diagnosis.",
+        "Preventive medicine and mental healthcare are investments that multiply national productivity."
+      ],
+      "redlines": [
+        "Will not support abolishing employer-sponsored private health coverage for Americans who prefer it.",
+        "Will not allow Medicare solvency to be compromised."
+      ],
+      "faq": [
+        {
+          "question": "Do you support Medicare for All?",
+          "answer": "I support a strong Public Option that allows anyone to choose Medicare coverage, while letting Americans who love their existing union or employer plans keep them."
+        }
+      ]
+    },
+    {
+      "id": "ENERGY-04",
+      "category": "Energy Independence & Climate Resilience",
+      "title": "All-of-the-Above Clean Energy & Grid Modernization",
+      "summary": "Rapid deployment of advanced nuclear fission/fusion, geothermal, solar, and modern electrical transmission grids while ensuring energy reliability and low rates.",
+      "key_pillars": [
+        "Fast-track regulatory approval for Small Modular Nuclear Reactors (SMRs).",
+        "National Supergrid Initiative to unify the Eastern, Western, and Texas electrical interconnections for peak resilience.",
+        "Direct grants for community solar and resilient agricultural microgrids.",
+        "Pragmatic transitional domestic energy security while reducing carbon emissions."
+      ],
+      "talking_points": [
+        "True national security starts with an abundant, resilient, and sovereign energy supply.",
+        "Advanced clean nuclear and modern power grids will make American electricity the cheapest and cleanest in the industrialized world."
+      ],
+      "redlines": [
+        "Will not mandate arbitrary energy shutdowns that increase blackouts or spike winter heating bills for working families."
+      ],
+      "faq": [
+        {
+          "question": "What is your stance on nuclear power?",
+          "answer": "Nuclear power, particularly next-generation Small Modular Reactors, is vital to providing baseload zero-carbon energy and powering our computing and industrial renaissance."
+        }
+      ]
+    },
+    {
+      "id": "GOV-05",
+      "category": "Democratic Reform & Ethics",
+      "title": "Transparent Republic & Campaign Finance Integrity",
+      "summary": "Ending corporate super PAC dominance, banning congressional stock trading, and restoring trust in federal regulatory institutions.",
+      "key_pillars": [
+        "Immediate ban on individual stock trading by members of Congress and executive branch cabinet officials.",
+        "12-year term limits for congressional leaders and lifetime bans on lobbying foreign sovereign entities.",
+        "Constitutional amendment proposal to overturn Citizens United and establish clean public campaign finance vouchers.",
+        "Full algorithmic transparency for automated government benefit evaluations."
+      ],
+      "talking_points": [
+        "Elected office is a public trust, not an insider trading brokerage.",
+        "When money dictates policy, the voice of the American citizen is silenced. We will restore true government by and for the people."
+      ],
+      "redlines": [
+        "Zero tolerance for undisclosed gifts, foreign retainers, or private equity conflicts among federal judges and lawmakers."
+      ],
+      "faq": [
+        {
+          "question": "Can you actually ban congressional stock trading?",
+          "answer": "Yes. With clear executive branch leadership and overwhelming bipartisan public support, we will push the Honest Public Service Act as day-one priority legislation."
+        }
+      ]
+    },
+    {
+      "id": "SEC-06",
+      "category": "Border, Security & Immigration",
+      "title": "Smart Border Enforcement & Merit-Based Modernization",
+      "summary": "Securing national borders with smart sensor technology and judicial processing while creating legal, transparent, and merit-based pathways for high-demand skills.",
+      "key_pillars": [
+        "Triple immigration court judges and asylum adjudicators to resolve backlogs in weeks rather than years.",
+        "High-tech non-intrusive border surveillance and fentanyl detection at official ports of entry.",
+        "Streamlined agricultural work visas and high-skilled STEM founder visas tied to American job creation.",
+        "Enforceable E-Verify with strict civil penalties on exploitative employers."
+      ],
+      "talking_points": [
+        "A sovereign nation must have secure borders, and a compassionate nation must have fair, orderly, and rapid legal processes.",
+        "Ending court backlogs ends the chaos, stops human trafficking cartels, and restores the rule of law."
+      ],
+      "redlines": [
+        "Will not accept uncontrolled border crossings or unadjudicated indefinite releases."
+      ],
+      "faq": [
+        {
+          "question": "How will you stop fentanyl trafficking?",
+          "answer": "Over 90% of illicit fentanyl enters through official ports of entry. We will mandate 100% cargo x-ray and AI-driven spectroscopic screening at all border crossings."
+        }
+      ]
+    }
+  ]
+}

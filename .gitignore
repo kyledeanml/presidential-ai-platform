@@ -1,0 +1,21 @@
+# Python bytecode & environments
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# Local GGUF model weights
+*.gguf
+models/
+
+# Ephemeral runtime telemetry & timestamped reports
+data/live_interactions.json
+reports/pulse_briefing_*.md
+reports/pulse_briefing_*.json
+
+# IDE & OS files
+.DS_Store
+.vscode/
+.idea/
